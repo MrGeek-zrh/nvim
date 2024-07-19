@@ -23,6 +23,10 @@ return {
     -- first setup telescope
     telescope.setup({
       -- your config
+      defaults = {
+        layout_strategy = "vertical",
+        layout_config = { height = 0.95 },
+      },
     })
 
     -- then load the extension
