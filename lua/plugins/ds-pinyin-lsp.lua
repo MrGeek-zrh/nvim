@@ -1,6 +1,6 @@
-if true then
-  return {}
-end
+-- if true then
+--   return {}
+-- end
 
 return {
   "neovim/nvim-lspconfig",
@@ -9,7 +9,7 @@ return {
     ---@type lspconfig.options
     servers = {
       ds_pinyin_lsp = {
-        mason = true, -- set to false if you don't want this server to be installed with mason
+        mason = false, -- set to false if you don't want this server to be installed with mason
         cmd = { "ds-pinyin-lsp" },
         filetypes = {
           "markdown",
@@ -38,7 +38,7 @@ return {
         end,
         init_options = {
           enabled = true,
-          db_path = "/Users/mrgeek/document/dict_db3dict.db3",
+          db_path = "/Users/mrgeek/document/dict_db3/dict.db3",
           completion_on = true,
           completion_around_mode = true,
           show_symbols = true,
@@ -47,7 +47,7 @@ return {
           max_suggest = 50,
           match_as_same_as_input = false,
           match_long_input = true,
-          completion_trigger_characters = ">",
+          completion_trigger_characters = "  ",
         },
         settings = {},
       },
